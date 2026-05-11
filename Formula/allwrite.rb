@@ -1,22 +1,22 @@
-# Generated with JReleaser 1.23.0 at 2026-04-07T21:02:24.122604185Z
+# Generated with JReleaser 1.24.0 at 2026-05-11T05:50:51.691010563Z
 
 class Allwrite < Formula
   desc "Automated code migrations runner"
   homepage "https://github.com/allegro/allwrite"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/allegro/allwrite/releases/download/v0.2.0/pl.allegro.tech.allwrite.allwrite-cli-0.2.0-linux-x86_64.zip"
-    sha256 "b51e41ee3f011ab6d09a3d03e1393171b14b449acfc918bd566dd6f87b7b0bc3"
+    url "https://github.com/allegro/allwrite/releases/download/v0.2.1/pl.allegro.tech.allwrite.allwrite-cli-0.2.1-linux-x86_64.zip"
+    sha256 "383fc2b6bc8f86001e329a6a0be94d5837d500616b70009754cd5f0517299ae8"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/allegro/allwrite/releases/download/v0.2.0/pl.allegro.tech.allwrite.allwrite-cli-0.2.0-osx-aarch_64.zip"
-    sha256 "e6b1b614e80c28edfd1398b3ceabd7f684ecc7a9189930bc4b2fc75f2eff69f9"
+    url "https://github.com/allegro/allwrite/releases/download/v0.2.1/pl.allegro.tech.allwrite.allwrite-cli-0.2.1-osx-aarch_64.zip"
+    sha256 "297ab53fe6bed682b9db605e4bee116c2ce55af94b16d6e1f2c3d235d13da9c0"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/allegro/allwrite/releases/download/v0.2.0/pl.allegro.tech.allwrite.allwrite-cli-0.2.0-osx-x86_64.zip"
-    sha256 "8a946a4168ad7b92a9b239829aa5ff1975cb86b526e3ca744e13e2fe6828e29f"
+    url "https://github.com/allegro/allwrite/releases/download/v0.2.1/pl.allegro.tech.allwrite.allwrite-cli-0.2.1-osx-x86_64.zip"
+    sha256 "37d2d4f1bbd745bc0e277c1ac3d9b8a1cb4e71dc98ed084e167d46db8e72a40d"
   end
 
 
@@ -47,6 +47,6 @@ class Allwrite < Formula
 
   test do
     output = shell_output("#{bin}/allwrite --version")
-    assert_match "0.2.0", output
+    assert_match "0.2.1", output
   end
 end
